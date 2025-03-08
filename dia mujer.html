@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Día de la Mujer</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px 40px;
+            border-radius: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 2s ease-in-out;
+        }
+        h1 {
+            font-size: 50px;
+            color: #e91e63;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 24px;
+            color: #333;
+        }
+        .heart {
+            font-size: 40px;
+            color: red;
+            animation: heartbeat 1s infinite;
+        }
+        @keyframes heartbeat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.3); }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Reproductor de música -->
+    <audio autoplay loop>
+        <source src="file:///C:/Users/LENOVO/Documents/html/musica/musica.mp3" type="audio/mp3">
+        Tu navegador no soporta este formato de audio.
+    </audio>
+    
+    <div class="container">
+        <h1>❤️ ¡Feliz Día, mi amor! ❤️</h1>
+        <p>Hoy celebro a la mujer más increíble que conozco: tú. 💕
+        Gracias por llenar mi vida de amor, alegría y luz. 
+        Eres un ser maravilloso y mereces todo lo hermoso de este mundo. 🌸</p>
+        <p class="heart">💖💖💖</p>
+    </div>
+</body>
+</html>
